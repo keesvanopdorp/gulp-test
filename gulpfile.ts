@@ -1,7 +1,10 @@
 import gulp from 'gulp';
 import sass from 'gulp-sass';
 import ts from 'gulp-typescript';
+import fs from 'fs';
 const tsProject = ts.createProject('tsconfig.json');
+
+const jsPath = './dist/js';
 
 const styles = () => {
 	return gulp.src('./assets/sass/**/*.scss')
@@ -10,9 +13,12 @@ const styles = () => {
 };
 
 const scripts = () => {
+	if(fs.existsSync(jsPath)){
+		fs.rmdirSync(jsPath, {recursive: true});
+	}
 	const tsResult = gulp.src('./assets/ts/**/*.ts') // or tsProject.src()
 		.pipe(tsProject());
-	return tsResult.js.pipe(gulp.dest('./dist/js'));
+	return tsResult.js.pipe(gulp.dest(jsPath));
 };
 
 export {

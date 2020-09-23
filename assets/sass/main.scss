@@ -1,14 +1,37 @@
+// imports google font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 //removes standard styles
 * {
     margin: 0;
 }
 
-.container {
-    max-width: 98vw;
-    font-weight: 300;
+body {
+    background-color: skyblue;
 }
 
-.test {
-    color: red;
-    background-color: skyblue;
+.navbar {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: gray;
+    padding: 10px;
+
+    .nav-link {
+        text-decoration: none;
+        color:#fff;
+        font-size: 1.5rem;
+        margin: 10px 1.5rem;
+    }
+}
+
+.container {
+    max-width: 98vw;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
 }
