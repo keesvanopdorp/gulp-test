@@ -1,12 +1,16 @@
 {
-  "name": "grunt-test",
+  "name": "gulp-test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "this project is example what you can do with gulp",
   "scripts": {
     "watch": "gulp"
   },
-  "keywords": [],
+  "keywords": [
+    "gulp",
+    "sass",
+    "scss",
+    "typescript"
+  ],
   "author": "Kees van Opdorp <keesjrvanopdorp@live.nl> (https://github.com/keesvanopdorp)",
   "license": "MIT",
   "dependencies": {},
