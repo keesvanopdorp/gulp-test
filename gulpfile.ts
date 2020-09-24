@@ -25,7 +25,7 @@ export {
 	styles,
 	scripts
 };
-export default () => {
+export default (): void => {
 	gulp.watch('./assets/sass/**/*.scss', gulp.series('styles'));
 	gulp.watch('./assets/ts/**/*.ts', gulp.series('scripts'));
 };
