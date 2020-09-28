@@ -1,0 +1,38 @@
+// imports google font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+//variables
+$primary-color: #666666;
+$secondary-color: #7896FF;
+
+//removes standard styles
+* {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+    max-width: 98vw;
+}
+
+.navbar {
+    background-color: $primary-color;
+    padding: 10px;
+
+    .nav-link {
+        text-decoration: none;
+        color:#fff;
+        font-size: 1.5rem;
+        margin: 10px 1.5rem;
+    }
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+}

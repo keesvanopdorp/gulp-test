@@ -1,37 +1,12 @@
-// imports google font
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-
-//removes standard styles
-* {
-    margin: 0;
-}
+@import './poorstrap.scss';
 
 body {
-    background-color: skyblue;
+    background-color: $secondary-color;
 }
 
-.navbar {
-    font-family: 'Noto Sans', sans-serif;
-    background-color: gray;
-    padding: 10px;
-
-    .nav-link {
-        text-decoration: none;
-        color:#fff;
-        font-size: 1.5rem;
-        margin: 10px 1.5rem;
-    }
-}
-
-.container {
-    max-width: 98vw;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.d-flex {
-    display: flex;
-    flex-direction: row;
+.login {
+    background-color: #fff;
+    width: 40vw;
+    padding: 1.2rem;
+    margin: 10rem auto;
 }

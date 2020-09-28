@@ -1,6 +1,5 @@
 "use strict";
 const navLinkElements = Array.from(document.querySelectorAll('.nav-link'));
-const test = 'kees';
 // tuple array (array met fixed size)
 const test2 = [3, 'test', false];
 navLinkElements.forEach(navLinkElement => {
@@ -9,7 +8,6 @@ navLinkElements.forEach(navLinkElement => {
 const numberToAccountingString = (number) => number !== null ? number < 0 ? `(${Math.abs(number)})` : number.toString() : undefined;
 console.log(numberToAccountingString(-5));
 console.log(numberToAccountingString(5));
-const user = { id: 1, name: 'kees' };
 const testFunction = (type) => {
     console.log(type);
 };
